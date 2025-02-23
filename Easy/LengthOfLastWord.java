@@ -1,3 +1,5 @@
+package Easy;
+
 public class LengthOfLastWord {
     /* Given a string *s* consisting of some words separated by
     some numbers of spaces, return the length of the last word in

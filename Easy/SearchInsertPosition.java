@@ -1,3 +1,5 @@
+package Easy;
+
 public class SearchInsertPosition {
     /*
     Given a sorted array of distinct integers and a target value, return the index if the target

@@ -1,3 +1,5 @@
+package Hard;
+
 public class MedianOfTwoSortedArrays {
     /*
     Given two sorted arrays *nums1* and *nums2* of size *m*
@@ -19,7 +21,7 @@ public class MedianOfTwoSortedArrays {
             return mergedNumbs[mergedNumbs.length / 2];
         } else {
             return (double) mergedNumbs[mergedNumbs.length / 2] +
-                    (double) mergedNumbs[(mergedNumbs.length/2) - 1] / 2;
+                    (double) mergedNumbs[(mergedNumbs.length / 2) - 1] / 2;
         }
 
     }
@@ -27,7 +29,9 @@ public class MedianOfTwoSortedArrays {
     private static int[] merge(int[] nums1, int[] nums2) {
         int[] mergedNums = new int[nums1.length + nums2.length];
 
-        int i, j, k = 0;
+        int i = 0;
+        int j = 0;
+        int k = 0;
         while (i < nums1.length && j < nums2.length) {
             if (nums1[i] < nums2[j]) {
                 mergedNums[k] = nums1[i];
@@ -48,6 +52,8 @@ public class MedianOfTwoSortedArrays {
             j++;
             k++;
         }
+        return mergedNums;
     }
+
 
 }

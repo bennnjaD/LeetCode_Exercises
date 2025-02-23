@@ -1,3 +1,5 @@
+package Easy;
+
 public class BinarySearch {
     public int binarySearch(int[] numbers, int target) {
         int low = 0;
